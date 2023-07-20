@@ -68,10 +68,6 @@ ul li:hover .dropdown{
         z-index: 1;
     }
 
-    .display{
-        display: block;
-    }
-
     .menu-content {
         display: none;
     }

@@ -19,18 +19,40 @@
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/navigation.css">
     <link rel="stylesheet" href="css/nav.css"> 
+    <link rel="stylesheet" href="css/bar-links.css">
     
+    <!-- Link to JQuery -->
+    <script src="js/j_query_min.js"></script>
+
 </head>
     
 <body>
     
     <div class="wrapper">
+        
+        <!-- bar at top to open links -->
+        <div id="container">
+        <div class="navT">
+            <div class="icon"></div>
+        </div>
+        
+        <div id="bar-menu">
+            <ul>
+            <li><a>Hom<span class="space">e</span></a></li>
+            <li><a>Informatio<span class="space">n</span></a></li>
+            <li><a>Attraction<span class="space">s</span></a></li>
+            <li><a>Contac<span class="space">t</span></a></li>
+            </ul>
+        </div>
+
+        </div>
 
         <div class="title">
             <h1>France Website</h1>
         </div>
 
         <div class="box nav">
+            <!-- full width navigation -->
             <nav class="menu menu-1">
 				<ul>
                     <li><a href="index.php" class="nav">Home</a></li>
@@ -45,9 +67,8 @@
                     <li><a href="" class="nav">Contact</a></li>
                 </ul>
 				</nav>
+
         </div>
-
-
 
         <div class = "box main">
 
@@ -65,4 +86,12 @@
     
     </div>  <!-- / wrapper  -->
     
+<script>
+    $(".navT").on("click", function(){
+    $(this).toggleClass("active");
+    $("#bar-menu").toggleClass("open");
+    $(".content").toggleClass("shift");
+    })
+</script>
+
 </body>        
