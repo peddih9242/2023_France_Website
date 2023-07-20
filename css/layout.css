@@ -1,0 +1,118 @@
+/* font for title */
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque&display=swap');
+
+body {
+    margin: auto;
+    padding: 50px;
+    color: #000;
+    font-family: 'Lato', sans-serif;
+    background-image: url("../images/backgrounds/leaf-desaturated.jpg");
+}
+
+
+/* ---- Set up site grid ---- */
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "title"
+        "nav"
+        "main"
+        "footer";
+    
+}
+
+.title {
+    grid-area: title;
+    text-align: center;
+    background-image: url("../images/france-flag-resized.png");
+    background-size: 100% auto;
+    font-size: 1.28vw
+}
+
+.nav {
+    grid-area: nav;
+    font-size: 150%;
+    text-align: center;
+    padding: 20px;
+    background-color: #BAC3FF; /* dark gray */
+}
+
+.main {
+    grid-area: main;
+    background-color: #f0f0f0;  /* light gray */
+}
+
+
+.footer {
+    grid-area: footer;
+    text-align: right;
+    background-color: #FFB1B5; /* pastel red */
+}
+
+/* ---- End of grid setup ---- */
+
+/* Responsive image rules */
+
+.responsive {
+    width: 100%;
+    height: auto;
+}
+
+/* -000- Area styling -000- */
+
+.box {
+    /* border-radius: 10px; */
+    padding: 20px;
+}
+
+
+/* -000- End of area styling -000- */
+
+h1, h2, h3, h4 {
+    font-family: 'Darker Grotesque', sans-serif;
+}
+
+/* Navigation Links */
+.nav a {font-weight: bold;}
+.nav a:link, .nav a:visited {color: #444655;} /*dark red */
+.nav a:hover {text-decoration: none;}
+
+
+/* links in page */
+a {font-weight: bold;}
+a:link{color: #AA0000;} /*dark_red */
+a:visited{color: #111177;} /* dark blue */
+a:hover{color: #000;}    /* Black*/
+
+
+@media (max-width: 767px) {
+    .wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "top-bar"
+            "title"
+            "main"
+            "footer";
+        grid-gap: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
