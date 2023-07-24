@@ -106,12 +106,22 @@
 #bar-menu.open {
     height: 270px;
     width: 100%;
-    background: #f3581b;
+    background: #BAC3FF;
     border-bottom: 1px solid black;
 }
 
 .space {
     letter-spacing: 0;
+}
+
+.content{
+    -webkit-transition: top 0.5s;
+    position: absolute;
+    top: 65px;
+}
+
+.content.shift{
+    top: 335px;
 }
 
 @media (max-width: 767px) {

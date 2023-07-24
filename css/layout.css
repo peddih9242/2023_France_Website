@@ -3,12 +3,14 @@
 
 body {
     margin: auto;
-    padding: 50px;
     color: #000;
     font-family: 'Lato', sans-serif;
     background-image: url("../images/backgrounds/leaf-desaturated.jpg");
 }
 
+.content {
+    padding: 0 50px 50px 50px;
+}
 
 /* ---- Set up site grid ---- */
 
@@ -18,7 +20,7 @@ body {
     grid-template-rows: auto;
     grid-template-areas: 
         "title"
-        "nav"
+        "menu-content"
         "main"
         "footer";
     
@@ -32,8 +34,8 @@ body {
     font-size: 1.28vw
 }
 
-.nav {
-    grid-area: nav;
+.menu-content {
+    grid-area: menu-content;
     font-size: 150%;
     text-align: center;
     padding: 20px;
@@ -87,6 +89,11 @@ a:link{color: #AA0000;} /*dark_red */
 a:visited{color: #111177;} /* dark blue */
 a:hover{color: #000;}    /* Black*/
 
+@media (min-width: 768px) {
+    .menu-content {
+        visibility: visible;
+    }
+}
 
 @media (max-width: 767px) {
     .wrapper {
@@ -99,6 +106,14 @@ a:hover{color: #000;}    /* Black*/
             "main"
             "footer";
         grid-gap: 0;
+    }
+
+    .content {
+        padding: 0;
+    }
+
+    .menu-content {
+        visibility: hidden;
     }
 }
 

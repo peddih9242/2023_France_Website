@@ -27,7 +27,9 @@
 </head>
     
 <body>
-    
+
+    <div class="content">
+
     <div class="wrapper">
         
         <!-- bar at top to open links -->
@@ -38,20 +40,26 @@
         
         <div id="bar-menu">
             <ul>
-            <li><a>Hom<span class="space">e</span></a></li>
-            <li><a>Informatio<span class="space">n</span></a></li>
-            <li><a>Attraction<span class="space">s</span></a></li>
-            <li><a>Contac<span class="space">t</span></a></li>
+            <li><a href="index.php">Hom<span class="space">e</span></a></li>
+            <li><a href="">Informatio<span class="space">n</span></a></li>
+            <li><a class="dropbtn" href="">Attraction<span class="space">s</span></a>
+            <ul class="dropdown">
+                <li><a href="" class="nav">Eiffel Tower</a></li>
+                <li><a href="" class="nav">Louvre Museum</a></li>
+                <li><a href="" class="nav">Palace of Versailles</a></li>
             </ul>
-        </div>
+        </li>
+            <li><a href="">Contac<span class="space">t</span></a></li>
+            </ul>
+        </div> <!-- / bar-menu -->
+        </div> <!-- / container -->
 
-        </div>
-
+        
         <div class="title">
             <h1>France Website</h1>
         </div>
 
-        <div class="box nav">
+        <div class="box menu-content">
             <!-- full width navigation -->
             <nav class="menu menu-1">
 				<ul>
@@ -79,13 +87,14 @@
         <p>All images used have been taken from <a href="https://pixabay.com/">Pixabay</a> under a CC license to respect copyright laws.</p>
         </div>
        
-
         <div class="box footer">
             CC Harish Peddi 2023
         </div>    <!-- / footer -->
     
     </div>  <!-- / wrapper  -->
-    
+
+    </div> <!-- / content -->
+
 <script>
     $(".navT").on("click", function(){
     $(this).toggleClass("active");
