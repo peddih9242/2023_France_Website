@@ -31,7 +31,7 @@ body {
     text-align: center;
     background-image: url("../images/france-flag-resized.png");
     background-size: 100% auto;
-    font-size: 1.28vw
+    font-size: 1.28vw;
 }
 
 .menu-content {
@@ -78,9 +78,9 @@ h1, h2, h3, h4 {
 }
 
 /* Navigation Links */
-.nav a {font-weight: bold;}
-.nav a:link, .nav a:visited {color: #444655;} /*dark red */
-.nav a:hover {text-decoration: none;}
+.menu-content a {font-weight: bold;}
+.menu-content a:link, .menu-content a:visited {color: #444655;} /*dark red */
+.menu-content a:hover {text-decoration: none;}
 
 
 /* links in page */

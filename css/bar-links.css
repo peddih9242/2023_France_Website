@@ -110,6 +110,10 @@
     border-bottom: 1px solid black;
 }
 
+.lower-shift {
+    top: 515px;
+}
+
 .space {
     letter-spacing: 0;
 }

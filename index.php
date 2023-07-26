@@ -42,8 +42,8 @@
             <ul>
             <li><a href="index.php">Hom<span class="space">e</span></a></li>
             <li><a href="">Informatio<span class="space">n</span></a></li>
-            <li><a class="dropbtn" href="">Attraction<span class="space">s</span></a>
-            <ul class="dropdown">
+            <li><a class="bar-btn dropbtn" href="">Attraction<span class="space">s</span></a>
+            <ul class="dropdown bar-drop">
                 <li><a href="" class="nav">Eiffel Tower</a></li>
                 <li><a href="" class="nav">Louvre Museum</a></li>
                 <li><a href="" class="nav">Palace of Versailles</a></li>
@@ -78,7 +78,7 @@
 
         </div>
 
-        <div class = "box main">
+        <div class="box main">
 
         <p>Welcome to the France Website! This is a website that shows some of the amazing things that France has to offer to those interested.</p>
 
@@ -101,6 +101,32 @@
     $("#bar-menu").toggleClass("open");
     $(".content").toggleClass("shift");
     })
+</script>
+
+<script>
+$('.bar-btn').mouseover(function()
+{
+    $('.bar-drop').toggleClass('display');
+
+    var bar_menu = document.getElementById("bar-menu");
+
+    let count = 1;
+    let height_change = 180;
+    let bar_height = 270;
+    let content_shift = 335;
+    count += 1;
+    
+    if (count % 2 == 0) {
+        bar_height += height_change;
+    }
+    else {
+        bar_height -= height_change;
+    }
+
+    bar_menu.style.height = $bar_height.toString();
+    $('.content').toggleClass('lower-shift');
+}
+)
 </script>
 
 </body>        

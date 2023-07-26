@@ -9,7 +9,7 @@
   margin: 0 15px;
 }
 .menu a{
-  font-size: 22px;
+  font-size: 1.156vw;
   text-decoration: none;
   display: block;
   position: relative;
@@ -44,5 +44,6 @@
 }
 
 .display {
-	visibility: visible;
+  display: block;
+  height: auto;
 }
