@@ -38,12 +38,12 @@
             <div class="icon"></div>
         </div>
         
-        <div id="bar-menu">
+        <div id="bar-menu" class="hide-menu">
             <ul>
             <li><a href="index.php">Hom<span class="space">e</span></a></li>
             <li><a href="">Informatio<span class="space">n</span></a></li>
             <li><a class="bar-btn dropbtn" href="">Attraction<span class="space">s</span></a>
-            <ul class="dropdown bar-drop">
+            <ul class="dropdown bar-drop hide-menu">
                 <li><a href="" class="nav">Eiffel Tower</a></li>
                 <li><a href="" class="nav">Louvre Museum</a></li>
                 <li><a href="" class="nav">Palace of Versailles</a></li>
@@ -96,24 +96,37 @@
     </div> <!-- / content -->
 
 <script>
+
     $(".navT").on("click", function(){
     $(this).toggleClass("active");
     $("#bar-menu").toggleClass("open");
     $(".content").toggleClass("shift");
+
+    $('#bar-menu').toggleClass('hide-menu');
+    $('.dropdown').toggleClass('hide-menu');
+
+    // force close dropdown if dropdown is shown
+    if(dropdown.classList.contains('hide-menu') != TRUE) {
+
+
+    }
+
     })
+
 </script>
 
 <script>
+// code for making dropdown and content shift work in half width
+let count = 1;
+let height_change = 180;
+let bar_height = 270;
+let content_shift = 335;
 $('.bar-btn').mouseover(function()
 {
     $('.bar-drop').toggleClass('display');
 
     var bar_menu = document.getElementById("bar-menu");
 
-    let count = 1;
-    let height_change = 180;
-    let bar_height = 270;
-    let content_shift = 335;
     count += 1;
     
     if (count % 2 == 0) {
@@ -123,8 +136,11 @@ $('.bar-btn').mouseover(function()
         bar_height -= height_change;
     }
 
-    bar_menu.style.height = $bar_height.toString();
-    $('.content').toggleClass('lower-shift');
+    bar_style = bar_height.toString() + 'px';
+
+    bar_menu.style.height = bar_style;
+    $('.content').toggleClass('shift');
+    $('.content').toggleClass('full-shift');
 }
 )
 </script>
