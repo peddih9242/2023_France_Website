@@ -28,7 +28,7 @@
     
 <body>
 
-    <div class="content">
+    <div class="content" id="page">
 
     <div class="wrapper">
         
@@ -43,7 +43,7 @@
             <li><a href="index.php">Hom<span class="space">e</span></a></li>
             <li><a href="">Informatio<span class="space">n</span></a></li>
             <li><a class="bar-btn dropbtn" href="">Attraction<span class="space">s</span></a>
-            <ul class="dropdown bar-drop hide-menu">
+            <ul class="dropdown bar-drop hide-menu" id="bar-drop">
                 <li><a href="" class="nav">Eiffel Tower</a></li>
                 <li><a href="" class="nav">Louvre Museum</a></li>
                 <li><a href="" class="nav">Palace of Versailles</a></li>
@@ -97,27 +97,39 @@
 
 <script>
 
-    $(".navT").on("click", function(){
-    $(this).toggleClass("active");
-    $("#bar-menu").toggleClass("open");
-    $(".content").toggleClass("shift");
+let down_count = 1;
+let drop_count = 1;
 
-    $('#bar-menu').toggleClass('hide-menu');
-    $('.dropdown').toggleClass('hide-menu');
+$(".navT").on("click", function(){
+$(this).toggleClass("active");
+$("#bar-menu").toggleClass("open");
+$(".content").toggleClass("shift");
 
-    // force close dropdown if dropdown is shown
-    if(dropdown.classList.contains('hide-menu') != TRUE) {
+$('#bar-menu').toggleClass('hide-menu');
+$('.dropdown').toggleClass('hide-menu');
 
+// force close dropdown if dropdown is shown
+drop_count += 1;
+var dropdown = document.getElementById('bar-drop');
+var content = document.getElementById('page');
+var bar_menu = document.getElementById('bar-menu');
 
-    }
+bar_menu.style.height = null;
 
-    })
+if (drop_count % 2 == 1 && dropdown.classList.contains('display') == true) {
+    content.classList.remove("shift");
+    content.classList.remove("full-shift");
 
-</script>
+    dropdown.classList.remove("display");
+    
+    bar_menu.style.height = '270px';
+    down_count += 1
+    bar_height = 270
+}
 
-<script>
+})
+
 // code for making dropdown and content shift work in half width
-let count = 1;
 let height_change = 180;
 let bar_height = 270;
 let content_shift = 335;
@@ -127,9 +139,9 @@ $('.bar-btn').mouseover(function()
 
     var bar_menu = document.getElementById("bar-menu");
 
-    count += 1;
+    down_count += 1;
     
-    if (count % 2 == 0) {
+    if (down_count % 2 == 0) {
         bar_height += height_change;
     }
     else {
