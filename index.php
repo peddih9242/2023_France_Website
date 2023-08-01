@@ -122,7 +122,6 @@ if (drop_count % 2 == 1 && dropdown.classList.contains('display') == true) {
 
     dropdown.classList.remove("display");
     
-    bar_menu.style.height = '270px';
     down_count += 1
     bar_height = 270
 }
