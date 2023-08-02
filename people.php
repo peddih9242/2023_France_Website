@@ -2,7 +2,7 @@
 
         <div class="box main">
 
-        <h2>Welcome</h2>
+        <h2>People of France</h2>
 
         <p>Welcome to the France Website! This is a website that shows some of the amazing things that France has to offer to those interested.</p>
 

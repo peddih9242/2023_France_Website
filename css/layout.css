@@ -78,10 +78,9 @@ h1, h2, h3, h4 {
 }
 
 /* Navigation Links */
-.menu-content a {font-weight: bold;}
-.menu-content a:link, .menu-content a:visited {color: #444655;} /*dark red */
-.menu-content a:hover {text-decoration: none;}
-
+.menu-content a, #bar-menu a {font-weight: bold;}
+.menu-content a:link, #bar-menu a:link, .menu-content a:visited, #bar-menu a:visited {color: #444655;} /*dark red */
+.menu-content a:hover, #bar-menu a:hover {text-decoration: none;}
 
 /* links in page */
 a {font-weight: bold;}
