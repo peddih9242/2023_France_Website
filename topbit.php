@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="css/navigation.css">
     <link rel="stylesheet" href="css/nav.css"> 
     <link rel="stylesheet" href="css/bar-links.css">
+    <link rel="stylesheet" href="css/gallery.css">
     
     <!-- Link to JQuery -->
     <script src="js/j_query_min.js"></script>
@@ -41,8 +42,8 @@
         <div id="bar-menu" class="hide-menu">
             <ul>
             <li><a href="index.php">Hom<span class="space">e</span></a></li>
-            <li><a href="people.php">People of Franc<span class="space">e</span></a></li>
-            <li><a class="bar-btn dropbtn" href="">Attraction<span class="space">s</span></a>
+            <li><a href="food.php">Foo<span class="space">d</span></a></li>
+            <li><a class="bar-btn dropbtn" href="#">Attraction<span class="space">s</span></a>
             <ul class="dropdown bar-drop hide-menu" id="bar-drop">
                 <li><a href="" class="nav">Eiffel Tower</a></li>
                 <li><a href="" class="nav">Louvre Museum</a></li>
@@ -64,7 +65,7 @@
             <nav class="menu menu-1">
 				<ul>
                     <li><a href="index.php" class="nav">Home</a></li>
-                    <li><a href="people.php" class="nav">People of France</a></li>
+                    <li><a href="food.php" class="nav">Food</a></li>
                     <li><a class="nav dropbtn" href="#">Attractions<i class="fa fa-chevron-down"></i></a>
                     <ul class="dropdown">
                         <li><a href="" class="nav">Eiffel Tower</a></li>
