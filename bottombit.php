@@ -68,4 +68,13 @@ $('.content').toggleClass('full-shift');
 )
 </script>
 
+<!-- Lightbox Javscript -->
+<script src="js/simple-lightbox.min.js"></script>
+
+<script>
+    (function() {
+        var $gallery = new SimpleLightbox('.gallery a', {});
+    })();
+</script>
+
 </body>        

@@ -1,12 +1,14 @@
 <?php
 
-function make_gallery($folder_name) {
+// function displays all images in a folder as a gallery while taking descriptions for each
+function make_gallery($folder_name, $descriptions) {
             
     $dirname = "images/$folder_name/";
     $images = glob($dirname."*.jpg");
 
     foreach($images as $images) {
 
+        $count = 0;
         // get image properties
         $exif = exif_read_data($images, 0, true);
 
@@ -34,12 +36,14 @@ function make_gallery($folder_name) {
         <div class="gallery">
 
             <a href="<?php echo $images ?>" class="big"><img src="<?php echo $images ?>" alt=<?php echo $title ?> title=<?php echo $title ?>></a>
-
+            <p><?php echo $descriptions[$count] ?></p>
         </div>
 
     </div>
 
         <?php
+
+    $count += 1;
 
     } // end of $images loop
 

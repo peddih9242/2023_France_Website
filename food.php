@@ -5,10 +5,14 @@
         <h2>French Food</h2>
 
         <?php
-                make_gallery("food")
+                $food_desc = array("Baguette", 
+                "Crepe", 
+                "Croissant", 
+                "Eclair", 
+                "Macarons", 
+                "Quiche");
+                make_gallery("food", $food_desc);
         ?>
-
-        <p></p>
 
         </div>
 

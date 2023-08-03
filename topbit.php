@@ -1,5 +1,10 @@
 <!DOCTYPE HTML>
 
+<?php
+    // function allows easy insertion of gallery code
+    include("functions.php");
+?>
+
 <html lang="en">
 
 <head>
@@ -21,6 +26,7 @@
     <link rel="stylesheet" href="css/nav.css"> 
     <link rel="stylesheet" href="css/bar-links.css">
     <link rel="stylesheet" href="css/gallery.css">
+    <link rel="stylesheet" href="css/simple-lightbox.css">
     
     <!-- Link to JQuery -->
     <script src="js/j_query_min.js"></script>
