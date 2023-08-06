@@ -44,3 +44,7 @@ div.desc {
   display: table;
   clear: both;
 }
+
+.desc {
+  padding: 5px;
+}
