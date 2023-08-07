@@ -1,5 +1,7 @@
 div.gallery {
   border: 1px solid #ccc;
+  background-color: #BAC3FF;
+  height: 520px;
 }
 
 div.gallery:hover {
@@ -24,19 +26,7 @@ div.desc {
   padding: 0 6px;
   float: left;
   width: 24.99999%;
-}
-
-@media only screen and (max-width: 700px) {
-  .responsive-gallery {
-    width: 49.99999%;
-    margin: 6px 0;
-  }
-}
-
-@media only screen and (max-width: 500px) {
-  .responsive-gallery {
-    width: 100%;
-  }
+  padding-top: 10px;
 }
 
 .clearfix:after {
@@ -47,4 +37,34 @@ div.desc {
 
 .desc {
   padding: 5px;
+  font-size: 1em;
+}
+
+@media only screen and (max-width: 1075px) {
+  .desc {
+    font-size: 0.75em;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive-gallery {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+
+  div.gallery {
+    height: 400px;
+  }
+}
+
+@media only screen and (min-width: 701px) {
+  div.gallery {
+    height: 520px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive-gallery {
+    width: 100%;
+  }
 }
