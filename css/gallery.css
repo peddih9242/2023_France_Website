@@ -38,11 +38,12 @@ div.desc {
 .desc {
   padding: 5px;
   font-size: 1em;
+  vertical-align: middle;
 }
 
-@media only screen and (max-width: 1075px) {
+@media only screen and (max-width: 1300px) {
   .desc {
-    font-size: 0.75em;
+    font-size: 0.75em
   }
 }
 
