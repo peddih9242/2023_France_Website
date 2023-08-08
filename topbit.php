@@ -51,7 +51,7 @@
             <li><a href="food.php">Foo<span class="space">d</span></a></li>
             <li><a class="bar-btn dropbtn" href="#">Attraction<span class="space">s</span></a>
             <ul class="dropdown bar-drop hide-menu" id="bar-drop">
-                <li><a href="" class="nav">Eiffel Tower</a></li>
+                <li><a href="eiffel-tower.php" class="nav">Eiffel Tower</a></li>
                 <li><a href="" class="nav">Louvre Museum</a></li>
                 <li><a href="" class="nav">Palace of Versailles</a></li>
             </ul>
@@ -74,7 +74,7 @@
                     <li><a href="food.php" class="nav">Food</a></li>
                     <li><a class="nav dropbtn" href="#">Attractions<i class="fa fa-chevron-down"></i></a>
                     <ul class="dropdown">
-                        <li><a href="" class="nav">Eiffel Tower</a></li>
+                        <li><a href="eiffel-tower.php" class="nav">Eiffel Tower</a></li>
                         <li><a href="" class="nav">Louvre Museum</a></li>
                         <li><a href="" class="nav">Palace of Versailles</a></li>
                     </ul>
