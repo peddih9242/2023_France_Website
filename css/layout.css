@@ -77,6 +77,12 @@ h1, h2, h3, h4 {
     font-family: 'Darker Grotesque', sans-serif;
 }
 
+/* Style contact embed to take the full page */
+
+.contact {
+    width: 100%;
+}
+
 /* Navigation Links */
 .menu-content a, #bar-menu a {font-weight: bold;}
 .menu-content a:link, #bar-menu a:link, .menu-content a:visited, #bar-menu a:visited {color: #444655;} /*dark red */
