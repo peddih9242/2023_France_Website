@@ -52,8 +52,8 @@
             <li><a class="bar-btn dropbtn" href="#">Attraction<span class="space">s</span></a>
             <ul class="dropdown bar-drop hide-menu" id="bar-drop">
                 <li><a href="eiffel-tower.php" class="nav">Eiffel Tower</a></li>
-                <li><a href="" class="nav">Louvre Museum</a></li>
-                <li><a href="" class="nav">Palace of Versailles</a></li>
+                <li><a href="louvre-museum.php" class="nav">Louvre Museum</a></li>
+                <li><a href="mont-saint-michel.php" class="nav">Mont Saint-Michel</a></li>
             </ul>
         </li>
             <li><a href="">Contac<span class="space">t</span></a></li>
@@ -75,8 +75,8 @@
                     <li><a class="nav dropbtn" href="#">Attractions<i class="fa fa-chevron-down"></i></a>
                     <ul class="dropdown">
                         <li><a href="eiffel-tower.php" class="nav">Eiffel Tower</a></li>
-                        <li><a href="" class="nav">Louvre Museum</a></li>
-                        <li><a href="" class="nav">Palace of Versailles</a></li>
+                        <li><a href="louvre-museum.php" class="nav">Louvre Museum</a></li>
+                        <li><a href="mont-saint-michel.php" class="nav">Mont Saint-Michel</a></li>
                     </ul>
                 </li>
                     <li><a href="" class="nav">Contact</a></li>
