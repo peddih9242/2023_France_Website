@@ -33,7 +33,7 @@ function make_gallery($folder_name, $descriptions) {
 
     <div class="responsive-gallery">
 
-        <div class="gallery">
+        <div class="lightbox gallery">
 
             <a href="<?php echo $images ?>" class="big"><img src="<?php echo $images ?>" alt="<?php echo $title ?>" title="<?php echo $title ?>"></a>
             <p class="desc"><?php echo $descriptions[$count] ?></p>

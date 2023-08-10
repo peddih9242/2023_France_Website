@@ -73,7 +73,7 @@ $('.content').toggleClass('full-shift');
 
 <script>
     (function() {
-        var $gallery = new SimpleLightbox('.gallery a', {});
+        var $gallery = new SimpleLightbox('.lightbox a', {});
     })();
 </script>
 
