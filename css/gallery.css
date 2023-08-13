@@ -43,28 +43,24 @@ div.desc {
 
 @media only screen and (max-width: 1300px) {
   .desc {
-    font-size: 0.75em
+    font-size: 0.9em;
   }
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 1000px) {
   .responsive-gallery {
     width: 49.99999%;
     margin: 6px 0;
-  }
-
-  div.gallery {
-    height: 400px;
   }
 }
 
 @media only screen and (min-width: 701px) {
   div.gallery {
-    height: 520px;
+    height: 530px;
   }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 800px) {
   .responsive-gallery {
     width: 100%;
   }
