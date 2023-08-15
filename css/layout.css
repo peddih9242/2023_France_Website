@@ -85,13 +85,13 @@ h1, h2, h3, h4 {
 
 /* Navigation Links */
 .menu-content a, #bar-menu a {font-weight: bold;}
-.menu-content a:link, #bar-menu a:link, .menu-content a:visited, #bar-menu a:visited {color: #444655;} /*dark red */
+.menu-content a:link, #bar-menu a:link, .menu-content a:visited, #bar-menu a:visited {color: #000;} /* black */
 .menu-content a:hover, #bar-menu a:hover {text-decoration: none;}
 
 /* links in page */
 a {font-weight: bold;}
-a:link{color: #AA0000;} /*dark_red */
-a:visited{color: #111177;} /* dark blue */
+a:link{color: #4F0C1D;} /*dark_red */
+a:visited{color: #002654;} /* dark blue */
 a:hover{color: #000;}    /* Black*/
 
 @media (min-width: 768px) {
