@@ -9,8 +9,8 @@
 
         <h2>Bonus Page</h2>
 
-        <img src="images/aurelien.jpg" style="width: 50%;" alt="Aurelien" title="Aurelien">
+        <img src="images/aurelien.jpg" style="height: 75%;" alt="Aurelien" title="Aurelien">
         
-        <p>Meet Aurelien, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia orci vitae iaculis vehicula. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras vitae consequat turpis. Vivamus et nibh est. In semper neque sed lacus placerat tincidunt eu et nisi. Praesent placerat vehicula turpis vitae tincidunt. Maecenas magna nibh, tristique vel euismod condimentum, malesuada non nibh.</p>
+        <p>Meet Aurelien, your quintessential French companion who effortlessly combines laid-back charm with a dash of sophistication. From sipping espresso at a corner café to effortlessly cycling through cobblestone streets, they embody the art of living in the moment. Conversations with Aurelien are like a delightful blend of banter and deep musings, reflecting their knack for both witty repartee and philosophical discussions. Their passion for good food, great wine, and even better company is infectious, turning every gathering into a memorable soirée. With an innate sense of style and an appreciation for the simple pleasures, Aurelien is a true embodiment of the French joie de vivre.</p>
         
     </div>

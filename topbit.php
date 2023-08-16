@@ -9,9 +9,9 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Put Content Here">
-    <meta name="keywords" content="Put keywords here">
-    <meta name="author" content="Put your name here">
+    <meta name="description" content="France Website">
+    <meta name="keywords" content="france, tourism, attractions, landmarks">
+    <meta name="author" content="Harish Peddi">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <title>France Website</title>
