@@ -51,7 +51,7 @@ body {
 .footer {
     grid-area: footer;
     text-align: right;
-    background-color: #FFB1B5; /* pastel red */
+    background-color: #ff7575; /* red */
 }
 
 /* ---- End of grid setup ---- */
