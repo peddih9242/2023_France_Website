@@ -14,7 +14,7 @@
     <meta name="author" content="Harish Peddi">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>France Website</title>
+    <title>Discover France</title>
     
     <!-- Google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Lato%7cUbuntu" rel="stylesheet"> 
@@ -64,7 +64,7 @@
 
         
         <div class="title">
-            <h1>France Website</h1>
+            <h1>Discover France</h1>
         </div>
 
         <div class="box menu-content">
