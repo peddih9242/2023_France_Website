@@ -4,7 +4,7 @@ div.with-desc {
   height: 520px;
 }
 
-div.gallery:hover {
+div.with-desc:hover {
   border: 1px solid #777;
 }
 
