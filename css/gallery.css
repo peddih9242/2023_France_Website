@@ -1,4 +1,4 @@
-div.gallery {
+div.with-desc {
   border: 1px solid #ccc;
   background-color: #BAC3FF;
   height: 520px;
@@ -55,7 +55,7 @@ div.desc {
 }
 
 @media only screen and (min-width: 701px) {
-  div.gallery {
+  div.with-desc {
     height: 530px;
   }
 }

@@ -16,7 +16,7 @@
                 "A soufflé is a delicate and airy dish that showcases the magic of culinary chemistry. This French creation starts with a flavorful base, often made from ingredients like cheese, chocolate, or vegetables, which is then combined with a light, whipped egg white mixture. During baking, the egg whites expand, causing the soufflé to rise dramatically in the oven. The result is a beautifully puffed and golden top, with a velvety and slightly gooey interior. Soufflés are known for their elegance and are often served as both sweet and savory options, making them a cherished example of French culinary artistry.");
 
                 $food_titles = array("Baguette", "Crepe", "Croissant", "Éclair", "Foie gras", "Macarons", "Quiche", "Soufflé");
-                make_gallery("food", $food_desc, $food_titles);
+                make_gallery("food", $food_titles, $food_desc);
         ?>
 
         </div>

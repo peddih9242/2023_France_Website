@@ -1,7 +1,7 @@
 <?php
 
 // function displays all images in a folder as a gallery while taking descriptions for each
-function make_gallery($folder_name, $descriptions, $titles) {
+function make_gallery($folder_name, $titles, $descriptions=null) {
             
     $dirname = "images/$folder_name/";
     $images = glob($dirname."*.jpg");
@@ -13,12 +13,30 @@ function make_gallery($folder_name, $descriptions, $titles) {
 
     <div class="responsive-gallery">
 
-        <div class="lightbox gallery">
+    <?php 
+        // if descriptions are given, add images with descriptions
+        if ($descriptions != null) {
+            ?>
+        <div class="lightbox gallery with-desc">
         <a href="<?php echo $images ?>" class="big"><img src="<?php echo $images ?>" alt="<?php echo $titles[$count] ?>" title="<?php echo $titles[$count] ?>"></a>
             <p class="desc"><?php echo $descriptions[$count] ?></p>
         </div>
+        
+    <?php
+        } // descriptions if
 
-    </div>
+        // if no descriptions given, just display image
+        else {
+            ?>
+            <div class="lightbox gallery">
+            <a href="<?php echo $images ?>" class="big"><img src="<?php echo $images ?>" alt="<?php echo $titles[$count] ?>" title="<?php echo $titles[$count] ?>"></a>
+            </div>
+    <?php
+        }
+    ?>
+
+
+    </div> <!-- / responsive gallery -->
 
         <?php
 
